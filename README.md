@@ -43,6 +43,14 @@ npm run android
 
 [Android-среда Expo](https://docs.expo.dev/get-started/set-up-your-environment/?buildEnv=local&device=simulated&mode=development-build&platform=android) · [Локальная сборка](https://docs.expo.dev/guides/local-app-development/)
 
+## APK из общего Docker Compose
+
+Общий Compose репозитория `swagger-petstore` запускает сервис `mobile` из образа `andymentor/lapki-mobile:latest`. На http://localhost:8091 доступны APK, его версия, архитектура и SHA-256. Docker выдаёт установочный файл; приложение запускается в Android-эмуляторе, не внутри контейнера.
+
+Запустите эмулятор x86_64 в Android Studio, скачайте APK и перетащите его на экран эмулятора. Metro, Expo Go и сборка исходников не требуются. Для физических ARM-телефонов эта сборка не подходит.
+
+Образ доставки собирается отдельно от APK: `docker build -f docker/Dockerfile.distribution -t andymentor/lapki-mobile:latest .`. Он загружает опубликованный APK 0.1.3 и проверяет SHA-256; Android SDK и приватные ключи в образ не входят.
+
 ## Подключение к API
 
 По умолчанию используется `http://10.0.2.2:8080/api/v3`: в стандартном Android Emulator `10.0.2.2` ведёт на Windows-компьютер. Подходит текущему Compose с API на `127.0.0.1:8080`.

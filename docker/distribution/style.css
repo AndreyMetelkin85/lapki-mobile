@@ -1,0 +1,10 @@
+:root { font-family: system-ui, sans-serif; color: #173b2a; background: #f6f3e9; }
+body { margin: 0; padding: 24px; }
+main { max-width: 720px; margin: 40px auto; }
+h1 { font-size: 2rem; }
+p, li { line-height: 1.6; }
+li { margin: 8px 0; }
+a { color: #315e48; }
+.download { display: inline-block; padding: 12px 24px; border-radius: 10px; background: #315e48; color: white; text-decoration: none; font-weight: 600; }
+code { overflow-wrap: anywhere; }
+footer { margin-top: 32px; font-size: 0.9rem; }
