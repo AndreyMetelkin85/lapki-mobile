@@ -1,0 +1,31 @@
+{
+  "generator": "built-in image_gen",
+  "approved_on": "2026-10-13",
+  "palette": {
+    "background": "#315E48",
+    "foreground": "#F7F5EF"
+  },
+  "assets": [
+    {
+      "file": "lapki-icon.png",
+      "kind": "approved generated icon",
+      "sha256": "fc6a300a15d28993e1e8cc3e569fa733a75a597288836c65408b4328784cf652",
+      "prompt": "Use case: logo-brand. Asset type: square Android launcher icon concept for the Russian pet shop app «Лапки». Generate ONE polished 1024x1024 flat graphic icon, the image itself, not a photograph of a screen or a mockup. Full-bleed solid dark forest-green background, hex #315E48. Exactly one large centered warm cream paw print, hex #F7F5EF: four softly rounded oval toe pads in a natural paw arc, and one generous central pad clearly shaped like a friendly heart with its point facing downward. The heart is the paw's pad, not an extra decoration. Balanced, simple, warm and calm, with crisp clean smooth silhouettes and strong readability at a small size. All cream shapes sit within the central 60% of the square, with generous green margin for Android's circle or rounded-square crop. Two solid colors only, clean flat vector-like raster rendering. Entire square background opaque; do not pre-round corners or draw an outer icon border. No text, letters, app name, watermark, gradients, shadows, glossy effects, 3D, badges, animals, extra symbols, screen frame or comparison sheet."
+    },
+    {
+      "file": "lapki-logo.png",
+      "kind": "approved generated wordmark",
+      "sha256": "39d110962f2f9cabf0ae8e511299968ca329f61e0cbbfa0be495b9cb50cd12b8",
+      "reference": "lapki-icon.png",
+      "prompt": "Use case: logo-brand / precise-object-edit. Edit target: the supplied cream paw with heart-shaped central pad on a dark forest-green square. Create the full wordmark version of this same pet shop brand, a single square raster image. Preserve the identity of the paw exactly: four oval toe pads and the heart-shaped central pad, the same friendly rounded silhouettes and proportions, the same cream and forest-green palette. Scale the whole paw uniformly smaller and position it above center, so that there is comfortable room underneath for one centered line of text. Add exactly the Russian Cyrillic word «Лапки» below the paw, without quotation marks. Exact letters: Л-а-п-к-и. Use a clean, warm, rounded Cyrillic sans-serif, moderately bold, careful readable letterforms, cream color to match the paw. The paw occupies roughly the upper half of the central composition; the word below has a visible comfortable gap and is approximately the same width as the paw. Center the combined mark optically with generous margins. Keep the entire full-bleed green background opaque and square, no surrounding screen, no pre-rounded border, no mockup. Flat graphic style. No additional words, slogan, letters, badges, symbols, outlines, 3D, glossy effects or watermark. Deliver ONE finished logo, not a comparison sheet."
+    },
+    {
+      "file": "lapki-foreground.png",
+      "kind": "adaptive layer exported from the whole approved PNG, without redrawing",
+      "reference": "lapki-logo.png",
+      "sourceSelection": "app.json: expo.android.icon or expo.icon",
+      "exporter": "scripts/export-branding.mjs",
+      "sourceToLayerRatio": 0.6666666666666666
+    }
+  ]
+}

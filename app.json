@@ -1,25 +1,48 @@
 {
   "expo": {
-    "name": "lapki-mobile",
+    "name": "Лапки",
     "slug": "lapki-mobile",
-    "version": "1.0.0",
+    "version": "0.1.3",
+    "scheme": "lapki",
+    "platforms": ["android"],
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/branding/lapki-logo.png",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
+      "package": "com.lapki.training",
+      "versionCode": 4,
+      "softwareKeyboardLayoutMode": "resize",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#315E48",
+        "foregroundImage": "./assets/branding/lapki-foreground.png"
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#315E48",
+          "image": "./assets/branding/lapki-logo.png",
+          "imageWidth": 180,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#315E48",
+            "image": "./assets/branding/lapki-logo.png"
+          }
+        }
+      ]
+    ]
   }
 }

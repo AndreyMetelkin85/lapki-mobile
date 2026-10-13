@@ -1,0 +1,10 @@
+node_modules
+.git
+.expo
+.claude
+android
+ios
+dist
+artifacts
+.env
+*.log
